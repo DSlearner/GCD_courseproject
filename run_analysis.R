@@ -44,5 +44,7 @@ run_analysis <- function(directory)
 	## set first and second column names 
 	names(tidy_data)[1] <- paste("activities")
 	names(tidy_data)[2] <- paste("subject")
-
+       
+        # return mean of tidy data set
+        return(sapply(tidy_data,mean))
 }
